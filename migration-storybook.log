@@ -1,0 +1,294 @@
+🔎 checking possible migrations..
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+WARN An issue occurred while trying to find dependencies metadata using npm.
+
+🔎 found a 'new-frameworks' migration:
+╭ Automigration detected ─────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                     │
+│   We've detected your project is not fully setup with the new framework format, which was           │
+│   introduced in Storybook 7.                                                                        │
+│                                                                                                     │
+│   Storybook 7 introduced the concept of frameworks, which abstracts configuration for renderers     │
+│   (e.g. React, Vue), builders (e.g. Webpack, Vite) and defaults to make integrations easier.        │
+│                                                                                                     │
+│   Your project should be updated to use Storybook's framework: @storybook/react-webpack5. We can    │
+│   attempt to do this for you automatically.                                                         │
+│                                                                                                     │
+│   Here are the steps this migration will do to migrate your project:                                │
+│   - Remove the following dependencies:                                                              │
+│   - * @storybook/builder-webpack5                                                                   │
+│   - * @storybook/manager-webpack5                                                                   │
+│   - Add the following dependencies:                                                                 │
+│   - * @storybook/react-webpack5                                                                     │
+│   - Remove the core.builder field in config\storybook\main.js.                                      │
+│                                                                                                     │
+│                                                                                                     │
+│   To learn more about the new framework format, see:                                                │
+│   https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#new-framework-api                 │
+│                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────╯
+? Do you want to run the 'new-frameworks' migration on your project? » (Y/n)√ Do you want to run the 'new-frameworks' migration on your project? ... yes
+✅ Removing dependencies: @storybook/builder-webpack5, @storybook/manager-webpack5
+✅ Installing new dependencies: @storybook/react-webpack5
+
+An error occurred while installing dependencies:
+Int.default is not a function
+❌ error when running new-frameworks migration
+HandledError: TypeError: Int.default is not a function
+    at QJ.addDependencies (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\@storybook\core\dist\common\index.cjs:153206:72)
+    at async Object.run (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:358:755)
+    ... 3 lines matching cause stack trace ...
+    at async Command.<anonymous> (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:739:2867) {
+  handled: true,
+  cause: TypeError: Int.default is not a function
+      at QJ.runAddDeps (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\@storybook\core\dist\common\index.cjs:153512:20)
+      at async QJ.addDependencies (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\@storybook\core\dist\common\index.cjs:153203:9)
+      at async Object.run (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:358:755)
+      at async runFixes (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:665:1794)
+      at async automigrate (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:663:1620)
+      at async doAutomigrate (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:663:636)
+      at async Command.<anonymous> (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:739:2867)
+}
+
+Unable to find .eslintrc config file, skipping
+
+🔎 found a 'remove-jest-testing-library' migration:
+╭ Automigration detected ─────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                     │
+│   Attention: We've detected that you're using the following packages which are known to be          │
+│   incompatible since Storybook 8:                                                                   │
+│                                                                                                     │
+│   - @storybook/testing-library                                                                      │
+│                                                                                                     │
+│   We will uninstall them for you and install @storybook/test instead.                               │
+│                                                                                                     │
+│   Also, we can help you migrate your stories to use the new package.                                │
+│                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────╯
+? Do you want to run the 'remove-jest-testing-library' migration on your project? » (Y/n)√ Do you want to run the 'remove-jest-testing-library' migration on your project? ... yes
+
+An error occurred while installing dependencies:
+EPERM: operation not permitted, rename 'C:\Users\леха\AppData\Local\Temp\baa62a0b468930d50ef565409851562e\storybook.log' -> 'C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\storybook.log'
+❌ error when running remove-jest-testing-library migration
+HandledError: Error: EPERM: operation not permitted, rename 'C:\Users\леха\AppData\Local\Temp\baa62a0b468930d50ef565409851562e\storybook.log' -> 'C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\storybook.log'
+    at QJ.addDependencies (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\@storybook\core\dist\common\index.cjs:153206:72)
+    at async Object.run (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:534:296)
+    at async runFixes (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:665:1794)
+    at async automigrate (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:663:1620)
+    at async doAutomigrate (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:663:636)
+    at async Command.<anonymous> (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:739:2867) {
+  handled: true,
+  cause: [Error: EPERM: operation not permitted, rename 'C:\Users\леха\AppData\Local\Temp\baa62a0b468930d50ef565409851562e\storybook.log' -> 'C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\storybook.log'] {
+    errno: -4048,
+    code: 'EPERM',
+    syscall: 'rename',
+    path: 'C:\\Users\\леха\\AppData\\Local\\Temp\\baa62a0b468930d50ef565409851562e\\storybook.log',
+    dest: 'C:\\Users\\леха\\Desktop\\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\\storybook.log'
+  }
+}
+
+
+🔎 found a 'remove-argtypes-regex' migration:
+╭ Manual migration detected ───────────────────────────────────────────────────────────────────╮
+│                                                                                              │
+│   Attention: We've detected that you're using argTypesRegex:                                 │
+│                                                                                              │
+│   config\storybook\preview.js                                                                │
+│      6 |                                                                                     │
+│      7 | export const parameters = {                                                         │
+│   >  8 |     actions: { argTypesRegex: '^on[A-Z].*' },                                       │
+│        |                ^^^^^^^^^^^^^                                                        │
+│      9 |     controls: {                                                                     │
+│     10 |         matchers: {                                                                 │
+│     11 |             color: /(background|color)$/i,                                          │
+│                                                                                              │
+│   Storybook's play functions let you render your stories interactively.                      │
+│                                                                                              │
+│   In the past, play functions mocked action args implicitly by analyzing the argTypesRegex   │
+│   in your preview.js|ts file.                                                                │
+│                                                                                              │
+│   However, Storybook 8 changes this behavior, and we now recommend using the                 │
+│   (fn) function to mock your component's methods instead.                                    │
+│                                                                                              │
+│   Use the following command to check for implied mocked actions in your play functions:      │
+│   npx storybook migrate find-implicit-spies --glob="**/*.stories.@(js|jsx|ts|tsx)"           │
+│                                                                                              │
+│   Then, refer to our docs to migrate your play functions to Storybook 8:                     │
+│   https://storybook.js.org/docs/8.0/essentials/actions#via-storybooktest-fn-spy-function     │
+│                                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────────────────────╯
+
+? Select continue once you have made the required changes, or quit to exit the migration process » quit / continue√ Select continue once you have made the required changes, or quit to exit the migration process ... quit / continue
+
+🔎 found a 'removedglobalclientapis' migration:
+╭ Manual migration detected ───────────────────────────────────────────────────────────────────────╮
+│                                                                                                  │
+│   Attention: We could not automatically make this change. You'll need to do it manually.         │
+│                                                                                                  │
+│   The following APIs (used in "config\storybook\preview.js") have been removed from Storybook:   │
+│                                                                                                  │
+│   - addDecorator                                                                                 │
+│                                                                                                  │
+│   Please see the migration guide for more information:                                           │
+│   https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#removed-global-client-apis     │
+│                                                                                                  │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+? Select continue once you have made the required changes, or quit to exit the migration process » quit / continue√ Select continue once you have made the required changes, or quit to exit the migration process ... quit / continue
+
+🔎 found a 'webpack5-compiler-setup' migration:
+╭ Automigration detected ─────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                     │
+│   Storybook's Webpack5 builder is now compiler agnostic, meaning you can choose a compiler addon    │
+│   that best fits your project:                                                                      │
+│                                                                                                     │
+│   - Babel: A vast ecosystem and is battle-tested. It's a robust choice if you have an extensive     │
+│   Babel setup or need specific Babel plugins for your project.                                      │
+│   - SWC:  Fast and easy to configure. Ideal if you want faster builds and have a straightforward    │
+│   configuration without the need for Babel's extensibility.                                         │
+│                                                                                                     │
+│   In the next step, Storybook will ask you to choose a compiler to automatically set it up for      │
+│   you.                                                                                              │
+│                                                                                                     │
+│   After the migration, you can switch Webpack5 compilers by swapping the addon in your project.     │
+│   You can find more information here:                                                               │
+│   https://storybook.js.org/docs/8.0/builders/webpack#compiler-support                               │
+│                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────╯
+? Do you want to run the 'webpack5-compiler-setup' migration on your project? » (Y/n)√ Do you want to run the 'webpack5-compiler-setup' migration on your project? ... yes
+? Which compiler would you like to use? » - Use arrow-keys. Return to submit.
+>   Babel
+    Choose Babel for a vast ecosystem and battle-tested reliability.
+    SWC
+√ Which compiler would you like to use? » Babel
+Verifying @storybook/addon-webpack5-compiler-babel
+Installing @storybook/addon-webpack5-compiler-babel@^3.0.3
+
+An error occurred while installing dependencies:
+EPERM: operation not permitted, lstat 'C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\storybook.log'
+❌ error when running webpack5-compiler-setup migration
+HandledError: Error: EPERM: operation not permitted, lstat 'C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\storybook.log'
+    at QJ.addDependencies (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\@storybook\core\dist\common\index.cjs:153206:72)
+    at async add (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:196:717)
+    at async Object.run (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:525:485)
+    at async runFixes (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:665:1794)
+    at async automigrate (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:663:1620)
+    at async doAutomigrate (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:663:636)
+    at async Command.<anonymous> (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:739:2867) {
+  handled: true,
+  cause: [Error: EPERM: operation not permitted, lstat 'C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\storybook.log'] {
+    errno: -4048,
+    code: 'EPERM',
+    syscall: 'lstat',
+    path: 'C:\\Users\\леха\\Desktop\\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\\storybook.log'
+  }
+}
+
+
+🔎 found a 'visual-tests-addon' migration:
+╭ Automigration detected ─────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                     │
+│   New to Storybook 8: Storybook's Visual Tests addon helps you catch unintentional changes/bugs     │
+│   in your stories. The addon is powered by Chromatic, a cloud-based testing tool developed by       │
+│   Storybook's core team.                                                                            │
+│                                                                                                     │
+│   Learn more: https://storybook.js.org/docs/writing-tests/visual-testing                            │
+│                                                                                                     │
+│   Install Visual Tests addon in your project?                                                       │
+│                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────╯
+? Do you want to run the 'visual-tests-addon' migration on your project? » (Y/n)√ Do you want to run the 'visual-tests-addon' migration on your project? ... yes
+
+An error occurred while installing dependencies:
+EPERM: operation not permitted, lstat 'C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\storybook.log'
+❌ error when running visual-tests-addon migration
+HandledError: Error: EPERM: operation not permitted, lstat 'C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\storybook.log'
+    at QJ.addDependencies (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\@storybook\core\dist\common\index.cjs:153206:72)
+    at async Object.run (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:565:141)
+    at async runFixes (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:665:1794)
+    at async automigrate (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:663:1620)
+    at async doAutomigrate (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:663:636)
+    at async Command.<anonymous> (C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\node_modules\storybook\dist\generate.cjs:739:2867) {
+  handled: true,
+  cause: [Error: EPERM: operation not permitted, lstat 'C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\storybook.log'] {
+    errno: -4048,
+    code: 'EPERM',
+    syscall: 'lstat',
+    path: 'C:\\Users\\леха\\Desktop\\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\\storybook.log'
+  }
+}
+
+
+🔎 found a 'autodocs-tags' migration:
+╭ Automigration detected ─────────────────────────────────────────────────────────────────────────────╮
+│                                                                                                     │
+│   The docs.autodocs setting in config\storybook\main.js is deprecated.                              │
+│                                                                                                     │
+│   Learn more: https://github.com/storybookjs/storybook/blob/next/MIGRATION.md#mainjs-docsautodocs   │
+│   -is-deprecated                                                                                    │
+│                                                                                                     │
+│   Remove docs.autodocs and update config\storybook\preview.js?                                      │
+│                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────╯
+? Do you want to run the 'autodocs-tags' migration on your project? » (Y/n)√ Do you want to run the 'autodocs-tags' migration on your project? ... yes
+✅ Adding "autodocs" tag to config\storybook\preview.js
+✅ Removing "docs.autodocs" from config\storybook\main.js
+✅ ran autodocs-tags migration
+
+╭ Migration check ran with failures ──────────────────────────────────────────────────────────────────╮
+│                                                                                                     │
+│   Successful migrations:                                                                            │
+│                                                                                                     │
+│   autodocs-tags                                                                                     │
+│                                                                                                     │
+│   Failed migrations:                                                                                │
+│                                                                                                     │
+│   new-frameworks:                                                                                   │
+│   TypeError: Int.default is not a function                                                          │
+│   remove-jest-testing-library:                                                                      │
+│   Error: EPERM: operation not permitted, rename                                                     │
+│   'C:\Users\леха\AppData\Local\Temp\baa62a0b468930d50ef565409851562e\storybook.log' -> 'C:\Users\   │
+│   леха\Desktop\production-project-4215aad27241c7a73faa058a6f2fc99f656013f5\storybook.log'           │
+│   webpack5-compiler-setup:                                                                          │
+│   Error: EPERM: operation not permitted, lstat 'C:\Users\леха\Desktop\production-project-4215aad2   │
+│   7241c7a73faa058a6f2fc99f656013f5\storybook.log'                                                   │
+│   visual-tests-addon:                                                                               │
+│   Error: EPERM: operation not permitted, lstat 'C:\Users\леха\Desktop\production-project-4215aad2   │
+│   7241c7a73faa058a6f2fc99f656013f5\storybook.log'                                                   │
+│                                                                                                     │
+│   You can find the full logs in C:\Users\леха\Desktop\production-project-4215aad27241c7a73faa058a   │
+│   6f2fc99f656013f5\migration-storybook.log                                                          │
+│                                                                                                     │
+│   Manual migrations:                                                                                │
+│                                                                                                     │
+│   remove-argtypes-regex, removedglobalclientapis                                                    │
+│                                                                                                     │
+│   ─────────────────────────────────────────────────                                                 │
+│                                                                                                     │
+│   If you'd like to run the migrations again, you can do so by running 'npx storybook automigrate'   │
+│                                                                                                     │
+│   The automigrations try to migrate common patterns in your project, but might not contain          │
+│   everything needed to migrate to the latest version of Storybook.                                  │
+│                                                                                                     │
+│   Please check the changelog and migration guide for manual migrations and more information:        │
+│   https://storybook.js.org/docs/8.0/migration-guide                                                 │
+│   And reach out on Discord if you need help: https://discord.gg/storybook                           │
+│                                                                                                     │
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
