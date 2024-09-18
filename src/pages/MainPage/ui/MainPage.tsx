@@ -14,6 +14,7 @@ const MainPage = () => {
         <div>
             {t('Главная страница')}
             <Input
+                /* eslint-disable-next-line i18next/no-literal-string */
                 placeholder="Введите текст"
                 onChange={onChange}
                 value={value}
