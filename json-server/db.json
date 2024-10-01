@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "first": "Алексей",
+    "lastname": "Комышев",
+    "age": "20" ,
+    "currency": "RUB",
+    "country": "Russia",
+    "sity": "Kotlas",
+    "username": "admin",
+    "avatar": "https://www.zastavki.com/pictures/originals/2014/Animals___Cats_Shaggy_Kuril_Bobtail_kitten_091931_.jpg"
+  }
 }
