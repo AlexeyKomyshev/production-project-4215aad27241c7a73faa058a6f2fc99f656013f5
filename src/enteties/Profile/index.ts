@@ -1,8 +1,7 @@
-import { updateProfileData } from 'enteties/Profile/model/services/updateProfileData/updateProfileData';
-
 export {
     Profile,
     ProfileSchema,
+    ValidateProfileError,
 } from './model/types/profile';
 
 export {
@@ -27,3 +26,4 @@ export { getProfileError } from './model/selectors/getProfileError/getProfileErr
 export { getProfileData } from './model/selectors/getProfileData/getProfileData';
 export { getProfileReadonly } from './model/selectors/getProfileReadonly/getProfileReadonly';
 export { getProfileForm } from './model/selectors/getProfileForm/getProfileForm';
+export { getProfileValidateErrors } from './model/selectors/getProfileValidateErrors/getProfileValidateErrors';

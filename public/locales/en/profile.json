@@ -1,0 +1,16 @@
+{
+  "Аватар": "Avatar",
+  "Ваш возраст": "Age",
+  "Ваша фамилия": "Lastname",
+  "Ваше имя": "Firstname",
+  "Город": "City",
+  "Имя пользователя": "Username",
+  "Отменить": "Cancel",
+  "Попробуйте обновить страницу": "Try refreshing the page",
+  "Произошла ошибка при загрузке профиля": "An error occurred while uploading the profile",
+  "Профиль": "Profile",
+  "Страница не найдена": "Page not found",
+  "Укажите валюту": "Currency",
+  "Укажите страну": "Country",
+  "Форма авторизации": "Auth form"
+}
