@@ -19,7 +19,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -100,6 +102,30 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "fgbfgbfgbfgb",
+      "id": "ftG0LWw"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "dfvdfvdvdvdfdvd",
+      "id": "F0QApH-"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Большие города",
+      "id": "JkLKQyx"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "gb",
+      "id": "zuRtWlj"
     }
   ],
   "users": [
@@ -118,17 +144,28 @@
       "avatar": "https://avatars.mds.yandex.net/i?id=bb588b900093b3e7e2c0807aae323590_l-12733951-images-thumbs&n=13"
     }
   ],
-  "profile": {
-    "first": "Алексей",
-    "lastname": "Комышев",
-    "age": 20,
-    "currency": "EUR",
-    "country": "Russia",
-    "username": "admin",
-    "avatar": "https://www.zastavki.com/pictures/originals/2014/Animals___Cats_Shaggy_Kuril_Bobtail_kitten_091931_.jpg",
-    "city": "Котлас"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Алексей",
+      "lastname": "Комышев",
+      "age": 20,
+      "currency": "EUR",
+      "country": "Russia",
+      "username": "admin",
+      "avatar": "https://www.zastavki.com/pictures/originals/2014/Animals___Cats_Shaggy_Kuril_Bobtail_kitten_091931_.jpg",
+      "city": "Котлас"
+    },
+    {
+      "id": "2",
+      "first": "Кто-то",
+      "lastname": "Котиковый",
+      "age": 69,
+      "currency": "RUB",
+      "country": "Belarus",
+      "username": "zelibobka",
+      "avatar": "https://i.pinimg.com/736x/ae/2e/70/ae2e70f6660753cf4353ff443d3b1726.jpg",
+      "city": "Минск"
+    }
+  ]
 }
-
-
-
