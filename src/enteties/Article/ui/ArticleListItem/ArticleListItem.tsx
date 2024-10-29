@@ -36,7 +36,6 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
     }, [article.id, navigate]);
 
     const [isHover, bindHover] = useHover();
-    console.log(isHover);
     const types = <Text text={article.type?.join(', ')} className={cls.types} />;
     const views = (
         <>

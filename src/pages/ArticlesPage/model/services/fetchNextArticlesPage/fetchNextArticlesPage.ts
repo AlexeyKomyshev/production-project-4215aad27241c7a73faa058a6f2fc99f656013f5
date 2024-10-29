@@ -25,14 +25,11 @@ export const fetchNextArticlesPage = createAsyncThunk<
         } = thunkApi;
         const hasMore = getArticlesPageHasMore(getState());
         const page = getArticlesPageNum(getState());
-        const limit = getArticlesPageLimit(getState());
         const isLoading = getArticlesPageIsLoading(getState());
 
         if (hasMore && !isLoading) {
             dispatch(articlePageActions.setPage(page + 1));
-            dispatch(fetchArticlesList({
-                page: page + 1,
-            }));
+            dispatch(fetchArticlesList({}));
         }
     },
 );
