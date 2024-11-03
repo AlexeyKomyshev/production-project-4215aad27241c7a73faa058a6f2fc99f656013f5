@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { HTMLAttributeAnchorTarget, memo } from 'react';
 import { ArticleListItemSkeleton } from 'enteties/Article/ui/ArticleListItem/ArticleListItemSkeleton';
 import { Text, TextSize } from 'shared/ui/Text/Text';
+import { AutoSizer, List } from 'react-virtualized';
 import cls from './ArticleList.module.scss';
 import { Article, ArticleView } from '../../model/types/article';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
@@ -51,11 +52,23 @@ export const ArticleList = memo((props: ArticleListProps) => {
     }
 
     return (
-        <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
-            {articles.length > 0
-                ? articles.map(renderArticle)
-                : null}
-            {isLoading && getSkeletons(view)}
-        </div>
+        <AutoSizer>
+            {({ width, height }) => (
+                <List
+                    height={500}
+                    rowCount={articles.length}
+                    rowHeight={500}
+                    rowRenderer={() => <div>row</div>}
+                    width={width}
+                />
+            )}
+        </AutoSizer>
+
+    // <div className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
+    //     {articles.length > 0
+    //         ? articles.map(renderArticle)
+    //         : null}
+    //     {isLoading && getSkeletons(view)}
+    // </div>
     );
 });
