@@ -11,10 +11,10 @@ import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEf
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { AddCommentForm } from 'features/addCommentForm';
 import { Page } from 'widgets/Page/Page';
-import { getArticlePageRecommendationsIsLoading } from 'pages/ArticlesDetailsPage/model/selectors/recommendations';
+import { getArticlePageRecommendationsIsLoading } from '../../model/selectors/recommendations';
 import {
     ArticlesDetailsPageHeader,
-} from 'pages/ArticlesDetailsPage/ui/ArticlesDetailsPageHeader/ArticlesDetailsPageHeader';
+} from '../ArticlesDetailsPageHeader/ArticlesDetailsPageHeader';
 import { articleDetailsPageReducer } from '../../model/slices';
 import {
     fetchArticlesRecommendations,
@@ -76,7 +76,8 @@ const ArticlesDetailsPage = (props : ArticlesDetailsPageProps) => {
                     articles={recommendations}
                     isLoading={recommendationsIsLoading}
                     className={cls.recommendations}
-                    target="_blank"
+                    /* eslint-disable-next-line */
+                    target={"_blank"}
                 />
                 <Text
                     size={TextSize.L}
