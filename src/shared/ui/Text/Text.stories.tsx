@@ -54,16 +54,30 @@ onlyTextDark.args = {
 };
 onlyTextDark.decorators = [ThemeDecorator(Theme.DARK)];
 
-export const PrimarySIzeM = Template.bind({});
-PrimarySIzeM.args = {
+export const PrimarySizeM = Template.bind({});
+PrimarySizeM.args = {
     title: 'Title lorem ipsun',
     text: 'Text lorem ipsun',
     size: TextSize.M,
 };
 
-export const PrimarySIzeL = Template.bind({});
-PrimarySIzeL.args = {
+export const PrimarySizeL = Template.bind({});
+PrimarySizeL.args = {
     title: 'Title lorem ipsun',
     text: 'Text lorem ipsun',
     size: TextSize.L,
+};
+
+export const SizeM = Template.bind({});
+SizeM.args = {
+    title: 'Title lorem ipsun',
+    text: 'Text lorem ipsun',
+    size: TextSize.M,
+};
+
+export const SizeS = Template.bind({});
+SizeS.args = {
+    title: 'Title lorem ipsun',
+    text: 'Text lorem ipsun',
+    size: TextSize.S,
 };
