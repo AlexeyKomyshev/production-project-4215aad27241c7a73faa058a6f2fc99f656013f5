@@ -19,7 +19,6 @@
     display: flex;
 }
 
-
 *::-webkit-scrollbar {
     width: 12px;
     height: 8px; /* размеры scrollbar */
@@ -32,6 +31,7 @@
 *::-webkit-scrollbar-thumb {
     background-color: var(--inverted-primary-color); /* цвет плашки */
     border-radius: 20px; /* закругления плашки */
-    border: 2px solid var(--primary-color)
+    border: 2px solid var(--primary-color);
 }
+
 /* padding вокруг плашки */
