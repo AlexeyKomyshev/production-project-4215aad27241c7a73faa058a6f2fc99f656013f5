@@ -1,9 +1,8 @@
-import {
-    profileActions, profileReducer, updateProfileData, ValidateProfileError,
-} from 'enteties/Profile';
 import { Country } from 'enteties/Country';
 import { Currency } from 'enteties/Currency';
-import { ProfileSchema } from '../types/profile';
+import { profileActions, profileReducer } from '../slice/profileSlice';
+import { ProfileSchema, ValidateProfileError } from '../types/editableProfileCardSchema';
+import { updateProfileData } from '../services/updateProfileData/updateProfileData';
 
 const data = {
     username: 'admin',
