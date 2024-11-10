@@ -3,7 +3,7 @@
  * https://jestjs.io/docs/configuration
  */
 
-import path from 'path';
+const path = require('path');
 
 export default {
     globals: {
@@ -46,7 +46,7 @@ export default {
         ['jest-html-reporters', {
             publicPath: '<rootDir>/reports/unit',
             filename: 'report.html',
-            openReport: true,
+            // openReport: true,
             inlineSource: true,
         }],
     ],

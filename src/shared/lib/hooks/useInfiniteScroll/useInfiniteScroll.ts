@@ -22,7 +22,7 @@ export function useInfiniteScroll({ callback, triggerRef, wrapperRef }: UseInfin
                     callback();
                 }
             }, options);
-            observer.current.observe(triggerRef.current);
+            observer.current.observe(triggerElement);
         }
 
         return () => {

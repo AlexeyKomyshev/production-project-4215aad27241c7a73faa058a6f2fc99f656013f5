@@ -4,10 +4,10 @@ import { memo, useCallback } from 'react';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { useSelector } from 'react-redux';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
-import { Currency } from 'enteties/Currency';
-import { Country } from 'enteties/Country';
+import { Currency } from 'entities/Currency';
+import { Country } from 'entities/Country';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
-import { ProfileCard } from 'enteties/Profile';
+import { ProfileCard } from 'entities/Profile';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { VStack } from 'shared/ui/Stack';
 import {
@@ -105,6 +105,7 @@ export const EditableProfileCard = memo((props: EditableProfileCardProps) => {
                         theme={TextTheme.ERROR}
                         text={validateErrorTranslates[err]}
                         key={err}
+                        data-testid="EditableProfileCard.Error"
                     />
                 ))}
                 <ProfileCard

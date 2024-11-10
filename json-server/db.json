@@ -584,14 +584,21 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN",
+      "roles": ["ADMIN"],
       "avatar": "https://www.zastavki.com/pictures/originals/2014/Animals___Cats_Shaggy_Kuril_Bobtail_kitten_091931_.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER",
+      "roles": ["USER"],
+      "avatar": "https://avatars.mds.yandex.net/i?id=bb588b900093b3e7e2c0807aae323590_l-12733951-images-thumbs&n=13"
+    },
+    {
+      "id": "3",
+      "username": "manager",
+      "password": "123",
+      "roles": ["MANAGER"],
       "avatar": "https://avatars.mds.yandex.net/i?id=bb588b900093b3e7e2c0807aae323590_l-12733951-images-thumbs&n=13"
     }
   ],

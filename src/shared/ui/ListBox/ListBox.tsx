@@ -33,8 +33,7 @@ const mapDirectionClass: Record<DropdownDirection, string> = {
 export function ListBox(props: ListBoxProps) {
     const {
         items,
-        className,
-        value,
+        className,        value,
         defaultValue,
         onChange,
         readonly,

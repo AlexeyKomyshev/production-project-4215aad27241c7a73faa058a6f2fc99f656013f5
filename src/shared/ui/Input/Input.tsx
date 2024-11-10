@@ -37,6 +37,7 @@ export const Input = memo((props : InputProps) => {
             ref.current?.focus();
         }
     }, [autofocus]);
+
     const onBlur = () => {
         setIsFocused(false);
     };
@@ -58,7 +59,7 @@ export const Input = memo((props : InputProps) => {
     };
 
     return (
-        <div className={classNames(cls.InputWrapper, mods, [className])}>
+        <div className={classNames(cls.InputWrapper, {}, [className])}>
             {placeholder && (
                 <div className={cls.placeholder}>
                     {`${placeholder}>`}
