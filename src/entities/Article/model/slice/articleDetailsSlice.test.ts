@@ -1,5 +1,4 @@
-import { ArticleType } from 'entities/Article/model/types/article';
-import { action } from '@storybook/addon-actions';
+import { ArticleType } from '../consts/consts';
 import { ArticleDetailsSchema } from '../types/articleDetailsSchema';
 import { fetchArticleById } from '../services/fetchArticleById/fetchArticleById';
 import { articleDetailsReducer } from './articleDetailsSlice';

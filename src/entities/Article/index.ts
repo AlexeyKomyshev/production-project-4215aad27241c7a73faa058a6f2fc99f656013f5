@@ -2,10 +2,13 @@ export {
     ArticleDetails,
 } from './ui/ArticleDetails/ArticleDetails';
 
-export {
-    Article, ArticleView, ArticleSortField, ArticleType,
+export type {
+    Article,
 } from './model/types/article';
-export { ArticleDetailsSchema } from './model/types/articleDetailsSchema';
+
+export type {
+    ArticleDetailsSchema,
+} from './model/types/articleDetailsSchema';
 
 export {
     ArticleList,
@@ -24,3 +27,8 @@ export { ArticleTypeTabs } from './ui/ArticleTypeTabs/ArticleTypeTabs';
 export {
     getArticleDetailsData,
 } from './model/selectors/articleDetails';
+export {
+    ArticleSortField,
+    ArticleView,
+    ArticleType,
+} from './model/consts/consts';
