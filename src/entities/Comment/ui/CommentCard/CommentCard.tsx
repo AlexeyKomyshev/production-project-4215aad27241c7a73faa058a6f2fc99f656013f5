@@ -50,5 +50,3 @@ export const CommentCard = memo((props: CommentCardProps) => {
         </VStack>
     );
 });
-
-// 17 минута
