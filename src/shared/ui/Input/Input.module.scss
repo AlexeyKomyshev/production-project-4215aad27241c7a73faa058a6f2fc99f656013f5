@@ -22,9 +22,11 @@
 .caret {
     position: absolute;
     width: 9px;
-    height: 3px;    background: var(--primary-color);
+    height: 3px;
+    background: var(--primary-color);
     bottom: 0;
-    left: 0;    animation: blink 0.7s forwards infinite;
+    left: 0;
+    animation: blink 0.7s forwards infinite;
 }
 
 .caretWrapper {

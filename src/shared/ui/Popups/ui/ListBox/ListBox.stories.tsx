@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Country } from 'entities/Country';
+import { Country } from '@/entities/Country';
 import { ListBox } from './ListBox';
 
 export default {
