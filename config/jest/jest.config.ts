@@ -11,6 +11,7 @@ export default {
         __API__: '',
         __PROJECT__: 'jest',
     },
+
     clearMocks: true,
     testEnvironment: 'jsdom',
     coveragePathIgnorePatterns: [
