@@ -1,6 +1,7 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { CurrencySelect } from '@/entities/Currency/ui/CurrencySelect/CurrencySelect';
+import { CurrencySelect } from './CurrencySelect';
+import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 
 export default {
     title: 'entities/CurrencySelect',
@@ -14,3 +15,4 @@ const Template: ComponentStory<typeof CurrencySelect> = (args) => <CurrencySelec
 
 export const Primary = Template.bind({});
 Primary.args = {};
+Primary.decorators = [StoreDecorator({})];
