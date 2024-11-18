@@ -1,8 +1,7 @@
 import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import withMock from 'storybook-addon-mock';
 import { NotificationList } from './NotificationList';
-import { WithoutRate, WithRate } from '@/features/articleRating/ui/ArticleRating/ArticleRating.stories';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
 
 export default {

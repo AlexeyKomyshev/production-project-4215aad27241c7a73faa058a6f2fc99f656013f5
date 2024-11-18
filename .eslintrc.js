@@ -71,6 +71,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'alekom-paths-plugin/path-checker': ['error', { alias: '@' }],
+        'alekom-paths-plugin/public-api-imports': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,

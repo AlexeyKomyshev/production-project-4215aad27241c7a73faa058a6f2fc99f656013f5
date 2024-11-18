@@ -27,8 +27,10 @@ export { ArticleTypeTabs } from './ui/ArticleTypeTabs/ArticleTypeTabs';
 export {
     getArticleDetailsData,
 } from './model/selectors/articleDetails';
+
 export {
     ArticleSortField,
     ArticleView,
     ArticleType,
+    ArticleBlockType,
 } from './model/consts/consts';
