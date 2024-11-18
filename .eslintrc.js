@@ -71,7 +71,13 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'alekom-paths-plugin/path-checker': ['error', { alias: '@' }],
-        'alekom-paths-plugin/public-api-imports': ['error', { alias: '@' }],
+        'alekom-paths-plugin/public-api-imports': [
+            'error',
+            {
+                alias: '@',
+                testFilesPatterns: ['**/*.test.*', '**/*.story.*', '**/StoreDecorator.tsx'],
+            },
+        ],
     },
     globals: {
         __IS_DEV__: true,
