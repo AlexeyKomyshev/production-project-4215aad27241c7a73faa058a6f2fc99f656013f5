@@ -71,6 +71,13 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'alekom-paths-plugin/path-checker': ['error', { alias: '@' }],
+        'alekom-paths-plugin/layer-imports': [
+            'error',
+            {
+                alias: '@',
+                ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+            },
+        ],
         'alekom-paths-plugin/public-api-imports': [
             'error',
             {

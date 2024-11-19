@@ -1,7 +1,7 @@
 import { configureStore, ReducersMapObject } from '@reduxjs/toolkit';
 import { CombinedState, Reducer } from 'redux';
 import { userReducer } from '@/entities/User';
-import { createReducerManager } from '@/app/providers/StoreProvider/config/reducerManager';
+import { createReducerManager } from './reducerManager';
 import { $api } from '@/shared/api/api';
 import { UIReducer } from '@/features/UI';
 import { rtkApi } from '@/shared/api/rtkApi';

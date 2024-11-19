@@ -1,5 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+// eslint-disable-next-line alekom-paths-plugin/layer-imports
 import { Country } from '@/entities/Country';
 import { ListBox } from './ListBox';
 
