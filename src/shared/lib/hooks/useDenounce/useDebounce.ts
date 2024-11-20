@@ -1,5 +1,4 @@
 import { MutableRefObject, useCallback, useRef } from 'react';
-import { d } from '@pmmmwh/react-refresh-webpack-plugin/types/options';
 
 export function useDebounce(callback: (...args: any[]) => void, delay: number) {
     const timer = useRef() as MutableRefObject<any>;

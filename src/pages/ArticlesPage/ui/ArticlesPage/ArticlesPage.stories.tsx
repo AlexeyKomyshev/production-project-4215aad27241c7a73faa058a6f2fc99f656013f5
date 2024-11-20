@@ -2,8 +2,6 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import ArticlesPage from './ArticlesPage';
 import { StoreDecorator } from '@/shared/config/storybook/StoreDecorator/StoreDecorator';
-import { ArticleSortField, ArticleType, ArticleView } from '@/entities/Article';
-import { SortOrder } from '@/shared/types';
 
 export default {
     title: 'pages/ArticlesPage/ArticlesPage',
