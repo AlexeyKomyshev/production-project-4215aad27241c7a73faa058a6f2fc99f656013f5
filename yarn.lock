@@ -7338,10 +7338,10 @@ eslint-module-utils@^2.7.2:
     debug "^3.2.7"
     find-up "^2.1.0"
 
-eslint-plugin-alekom-paths-plugin@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/eslint-plugin-alekom-paths-plugin/-/eslint-plugin-alekom-paths-plugin-0.0.5.tgz"
-  integrity sha512-GgiduHsbuPzYXNZHbCl0hII/w8Cumq13XDJjtH1f8xGeUh0kpeZ15mviMNoGaUBR1lsm20hurJ5/Uh/bQuIwFA==
+eslint-plugin-alekom-paths-plugin@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.npmjs.org/eslint-plugin-alekom-paths-plugin/-/eslint-plugin-alekom-paths-plugin-0.0.9.tgz"
+  integrity sha512-xWdOAPWayW6M8MH4LCxC+TPVr0B48np9HxuicZ75xqP7NaPGkeOsLSes9YsoB5Lmduqwp3efe+RMtB3PuE3SIQ==
   dependencies:
     requireindex "^1.2.0"
 
