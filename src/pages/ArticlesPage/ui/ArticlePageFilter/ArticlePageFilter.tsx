@@ -3,10 +3,7 @@ import { memo, useCallback } from 'react';
 import { useSelector } from 'react-redux';
 import {
     ArticleSortField,
-    ArticleSortSelector,
-    ArticleTypeTabs,
     ArticleView,
-    ArticleViewSelector,
     ArticleType,
 } from '@/entities/Article';
 import { classNames } from '@/shared/lib/classNames/classNames';
@@ -25,6 +22,9 @@ import {
     getArticlesPageView,
 } from '../../model/selectors/articlesPageSelectors';
 import cls from './ArticlePageFilter.module.scss';
+import { ArticleSortSelector } from '@/features/ArticleSortSelector';
+import { ArticleViewSelector } from '@/features/ArticleViewSelector';
+import { ArticleTypeTabs } from '@/features/ArticleTypeTabs';
 
 interface ArticlePageFilterProps {
     className?: string;
