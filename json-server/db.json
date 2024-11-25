@@ -658,6 +658,15 @@
         "MANAGER"
       ],
       "avatar": "https://avatars.mds.yandex.net/i?id=bb588b900093b3e7e2c0807aae323590_l-12733951-images-thumbs&n=13"
+    },
+    {
+      "id": "4",
+      "username": "test",
+      "password": "123",
+      "roles": [
+        "MANAGER"
+      ],
+      "avatar": "https://avatars.mds.yandex.net/i?id=01fb6d454b1e71efb02d7a2f41be61bf9a7e53d5-9226182-images-thumbs&n=13"
     }
   ],
   "profile": [
@@ -712,6 +721,13 @@
       "rate": 3,
       "feedback": "dfvdfvdfvdfvdfvdfvdfvdfv",
       "id": "yWmsyjG"
+    },
+    {
+      "userId": "2",
+      "articleId": "4",
+      "rate": 3,
+      "feedback": "",
+      "id": "pexAJCL"
     }
   ],
   "profile-ratings": [
