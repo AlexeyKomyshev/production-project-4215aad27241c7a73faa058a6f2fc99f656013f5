@@ -34,4 +34,12 @@ describe('Пользователь заходит на страницу стат
         cy.setRate(4, 'feedback');
         cy.get('[data-selected=true]').should('have.length', 4);
     });
+    // стабы - те же моки
+    it('И ставит оценку (пример с стабом)', () => {
+        cy.intercept('GET', '**/articles/*', { fixture: 'article-details.json' });
+        cy.getByTestId('ArticleDetail.Info');
+        cy.getByTestId('RatingCard').scrollIntoView();
+        cy.setRate(4, 'feedback');
+        cy.get('[data-selected=true]').should('have.length', 4);
+    });
 });
