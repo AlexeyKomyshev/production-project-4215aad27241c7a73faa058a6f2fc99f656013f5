@@ -7206,10 +7206,10 @@ eslint-module-utils@^2.7.2:
     debug "^3.2.7"
     find-up "^2.1.0"
 
-eslint-plugin-alekom-paths-plugin@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/eslint-plugin-alekom-paths-plugin/-/eslint-plugin-alekom-paths-plugin-0.1.1.tgz"
-  integrity sha512-dA5kT85pLvwfyesQWDuJeIfBxfQ8O9MQmITMyaBTwk6Bbzlg55T3DvVLb55W8vsL6yu1GyWlswvEAslcnb1JoQ==
+eslint-plugin-alekom-paths-plugin@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.npmjs.org/eslint-plugin-alekom-paths-plugin/-/eslint-plugin-alekom-paths-plugin-0.1.2.tgz"
+  integrity sha512-T5AQDDeeH4sf4D76ohKh3M/XoZv0Uaodg9OSoKMfNGYxUhsPng7HuYLPIdda3FTNW01ViX8Wj8eSQPH39b9O3g==
   dependencies:
     requireindex "^1.2.0"
 
@@ -7291,14 +7291,6 @@ eslint-plugin-storybook@^0.6.7:
     "@typescript-eslint/experimental-utils" "^5.3.0"
     requireindex "^1.1.0"
     ts-dedent "^2.2.0"
-
-eslint-plugin-ulbi-tv-plugin@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.npmjs.org/eslint-plugin-ulbi-tv-plugin/-/eslint-plugin-ulbi-tv-plugin-0.0.9.tgz"
-  integrity sha512-H/Md7BjH3hFVEmKZF+aGB2JHAEMOF4QH4m81/GxbiO3VB+cSpuQnhk2MwfVowFK26yLmKTiiwGnETMAUzpeb9w==
-  dependencies:
-    micromatch "^4.0.5"
-    requireindex "^1.2.0"
 
 eslint-plugin-unused-imports@^2.0.0:
   version "2.0.0"
