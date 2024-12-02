@@ -649,6 +649,9 @@
             "username": "admin",
             "password": "123",
             "roles": ["ADMIN"],
+            "features": {
+                "isArticleRatingEnabled" : true
+            },
             "avatar": "https://www.zastavki.com/pictures/originals/2014/Animals___Cats_Shaggy_Kuril_Bobtail_kitten_091931_.jpg"
         },
         {
@@ -656,6 +659,9 @@
             "username": "user",
             "password": "123",
             "roles": ["USER"],
+            "features": {
+                "isArticleRatingEnabled" : false
+            },
             "avatar": ""
         },
         {
@@ -663,6 +669,9 @@
             "username": "manager",
             "password": "123",
             "roles": ["MANAGER"],
+            "features": {
+                "isArticleRatingEnabled" : false
+            },
             "avatar": "https://avatars.mds.yandex.net/i?id=bb588b900093b3e7e2c0807aae323590_l-12733951-images-thumbs&n=13"
         },
         {
@@ -670,6 +679,9 @@
             "username": "test",
             "password": "123",
             "roles": ["MANAGER"],
+            "features": {
+                "isArticleRatingEnabled" : true
+            },
             "avatar": "https://avatars.mds.yandex.net/i?id=01fb6d454b1e71efb02d7a2f41be61bf9a7e53d5-9226182-images-thumbs&n=13"
         }
     ],
