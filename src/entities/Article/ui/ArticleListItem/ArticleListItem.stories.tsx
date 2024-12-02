@@ -12,7 +12,9 @@ export default {
     },
 } as ComponentMeta<typeof ArticleListItem>;
 
-const Template: ComponentStory<typeof ArticleListItem> = (args) => <ArticleListItem {...args} />;
+const Template: ComponentStory<typeof ArticleListItem> = (args) => (
+    <ArticleListItem {...args} />
+);
 
 const article = {
     id: '1',
@@ -26,11 +28,7 @@ const article = {
         username: 'AleKom',
         avatar: 'https://www.zastavki.com/pictures/originals/2014/Animals___Cats_Shaggy_Kuril_Bobtail_kitten_091931_.jpg',
     },
-    type: [
-        'IT',
-        'SCIENCE',
-        'ECONOMICS',
-    ],
+    type: ['IT', 'SCIENCE', 'ECONOMICS'],
     blocks: [
         {
             id: '1',

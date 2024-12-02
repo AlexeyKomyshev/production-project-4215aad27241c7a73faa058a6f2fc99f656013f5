@@ -11,7 +11,6 @@ export default (env: BuildEnv) => {
         src: path.resolve(__dirname, 'src'),
         locales: path.resolve(__dirname, 'public', 'locales'),
         buildLocaled: path.resolve(__dirname, 'build', 'locales'),
-
     };
 
     const mode = env?.mode || 'development';

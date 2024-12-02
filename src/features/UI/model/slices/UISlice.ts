@@ -8,11 +8,13 @@ export const UISlice = createSlice({
     name: 'UI',
     initialState,
     reducers: {
-        setScrollPosition:
-            (state, { payload }: PayloadAction<{ path: string; position: number}>) => {
-                // @ts-ignore
-                state.scroll[payload.path] = payload.position;
-            },
+        setScrollPosition: (
+            state,
+            { payload }: PayloadAction<{ path: string; position: number }>,
+        ) => {
+            // @ts-ignore
+            state.scroll[payload.path] = payload.position;
+        },
     },
 });
 

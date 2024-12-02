@@ -12,7 +12,9 @@ export default {
     },
 } as ComponentMeta<typeof ArticleList>;
 
-const Template: ComponentStory<typeof ArticleList> = (args) => <ArticleList {...args} />;
+const Template: ComponentStory<typeof ArticleList> = (args) => (
+    <ArticleList {...args} />
+);
 
 const article = {
     id: '1',
@@ -26,11 +28,7 @@ const article = {
         username: 'AleKom',
         avatar: 'https://www.zastavki.com/pictures/originals/2014/Animals___Cats_Shaggy_Kuril_Bobtail_kitten_091931_.jpg',
     },
-    type: [
-        'IT',
-        'SCIENCE',
-        'ECONOMICS',
-    ],
+    type: ['IT', 'SCIENCE', 'ECONOMICS'],
     blocks: [
         {
             id: '1',
@@ -110,24 +108,19 @@ isLoadingSmall.args = {
 export const ListBig = Template.bind({});
 ListBig.args = {
     isLoading: false,
-    articles:
-        new Array(9)
-            .fill(0)
-            .map((item, index) => ({
-                ...article,
-                id: String(index),
-            })),
+    articles: new Array(9).fill(0).map((item, index) => ({
+        ...article,
+        id: String(index),
+    })),
     view: ArticleView.BIG,
 };
 
 export const ListSmall = Template.bind({});
 ListSmall.args = {
     isLoading: false,
-    articles: new Array(3)
-        .fill(0)
-        .map((item, index) => ({
-            ...article,
-            id: String(index),
-        })),
+    articles: new Array(3).fill(0).map((item, index) => ({
+        ...article,
+        id: String(index),
+    })),
     view: ArticleView.SMALL,
 };

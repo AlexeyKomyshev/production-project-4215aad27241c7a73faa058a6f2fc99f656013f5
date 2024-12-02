@@ -17,12 +17,14 @@ const Template: ComponentStory<typeof Modal> = (args) => <Modal {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
     isOpen: true,
-    children: 'ofvnaofvnaofnvfdnvoafnvadfnvdanfvjadnfkvdnafkvnadkfvnadfnvnadkfvndkfjvndakjfvnkdajfnvdanfvjadnfkvdnafkvnadkfvnadfnvnadkfvndkfjvndakjfvnknvdanfvjadnfkvdnafkvnadkfvnadfnvnadkfvndkfjvndakjfvnknvdanfvjadnfkvdnafkvnadkfvnadfnvnadkfvndkfjvndakjfvnkn',
+    children:
+        'ofvnaofvnaofnvfdnvoafnvadfnvdanfvjadnfkvdnafkvnadkfvnadfnvnadkfvndkfjvndakjfvnkdajfnvdanfvjadnfkvdnafkvnadkfvnadfnvnadkfvndkfjvndakjfvnknvdanfvjadnfkvdnafkvnadkfvnadfnvnadkfvndkfjvndakjfvnknvdanfvjadnfkvdnafkvnadkfvnadfnvnadkfvndkfjvndakjfvnkn',
 };
 export const Dark = Template.bind({});
 Dark.args = {
     isOpen: true,
-    children: 'ofvnaofvna;ofnvfdnvoafnvadfnnvfdnvoafnvadfnvdanfvjanvfdnvoafnvadfnvdanfvjanvfdnvoafnvadfnvdanfvjanvfdnvoafnvadfnvdanfvjanvfdnvoafnvadfnvdanfvjanvfdnvoafnvadfnvdanfvjanvfdnvoafnvadfnvdanfvjavdanfvjadnf;kvdnaf;kvnadkfvnadfnvnad;kfvndkfjvndakjfvnkdajfn',
+    children:
+        'ofvnaofvna;ofnvfdnvoafnvadfnnvfdnvoafnvadfnvdanfvjanvfdnvoafnvadfnvdanfvjanvfdnvoafnvadfnvdanfvjanvfdnvoafnvadfnvdanfvjanvfdnvoafnvadfnvdanfvjanvfdnvoafnvadfnvdanfvjanvfdnvoafnvadfnvdanfvjavdanfvjadnf;kvdnaf;kvnadkfvnadfnvnad;kfvndkfjvndakjfvnkdajfn',
 };
 
 Dark.decorators = [ThemeDecorator(Theme.DARK)];

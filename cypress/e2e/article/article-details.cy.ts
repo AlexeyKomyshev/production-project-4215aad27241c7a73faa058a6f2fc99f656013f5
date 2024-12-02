@@ -36,7 +36,9 @@ describe('Пользователь заходит на страницу стат
     });
     // стабы - те же моки
     it('И ставит оценку (пример с стабом)', () => {
-        cy.intercept('GET', '**/articles/*', { fixture: 'article-details.json' });
+        cy.intercept('GET', '**/articles/*', {
+            fixture: 'article-details.json',
+        });
         cy.getByTestId('ArticleDetail.Info');
         cy.getByTestId('RatingCard').scrollIntoView();
         cy.setRate(4, 'feedback');

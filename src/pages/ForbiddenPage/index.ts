@@ -1,3 +1,1 @@
-export {
-    default as ForbiddenPage,
-} from './ui/ForbiddenPage';
+export { default as ForbiddenPage } from './ui/ForbiddenPage';
