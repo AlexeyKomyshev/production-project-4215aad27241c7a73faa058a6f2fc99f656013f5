@@ -704,7 +704,8 @@
       "jsonSettings": {
         "theme": "app_dark_theme",
         "isFirstVisit": true,
-        "settingsPageHasBeenOpen": false
+        "settingsPageHasBeenOpen": false,
+        "isArticlesPageWasOpened": true
       }
     },
     {
@@ -717,7 +718,10 @@
       "features": {
         "isArticleRatingEnabled": false
       },
-      "avatar": ""
+      "avatar": "",
+      "jsonSettings": {
+        "isArticlesPageWasOpened": true
+      }
     },
     {
       "id": "3",
@@ -741,7 +745,10 @@
       "features": {
         "isArticleRatingEnabled": true
       },
-      "avatar": "https://avatars.mds.yandex.net/i?id=01fb6d454b1e71efb02d7a2f41be61bf9a7e53d5-9226182-images-thumbs&n=13"
+      "avatar": "https://avatars.mds.yandex.net/i?id=01fb6d454b1e71efb02d7a2f41be61bf9a7e53d5-9226182-images-thumbs&n=13",
+      "jsonSettings": {
+        "isArticlesPageWasOpened": true
+      }
     }
   ],
   "profile": [
