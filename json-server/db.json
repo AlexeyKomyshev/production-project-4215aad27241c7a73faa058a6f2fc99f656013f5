@@ -721,7 +721,8 @@
       },
       "avatar": "",
       "jsonSettings": {
-        "isArticlesPageWasOpened": true
+        "isArticlesPageWasOpened": true,
+        "theme": "app_orange_theme"
       }
     },
     {
