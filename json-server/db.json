@@ -722,7 +722,7 @@
       "avatar": "",
       "jsonSettings": {
         "isArticlesPageWasOpened": true,
-        "theme": "app_orange_theme"
+        "theme": "app_dark_theme"
       }
     },
     {
@@ -758,12 +758,12 @@
       "id": "1",
       "first": "Алексей",
       "lastname": "Комышев",
-      "age": 20,
+      "age": 47,
       "currency": "RUB",
       "country": "Armenia",
       "username": "admin",
       "avatar": "https://www.zastavki.com/pictures/originals/2014/Animals___Cats_Shaggy_Kuril_Bobtail_kitten_091931_.jpg",
-      "city": "Котлас"
+      "city": "Архангельск"
     },
     {
       "id": "2",
