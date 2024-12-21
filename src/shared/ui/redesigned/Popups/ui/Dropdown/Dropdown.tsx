@@ -1,11 +1,11 @@
-import { Fragment, memo, ReactNode } from 'react';
 import { Menu } from '@headlessui/react';
+import { Fragment, ReactNode } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { DropdownDirection } from '@/shared/types/ui';
 import { AppLink } from '../../../AppLink/AppLink';
+import cls from './Dropdown.module.scss';
 import { mapDirectionClass } from '../../styles/consts';
 import popupCls from '../../styles/popup.module.scss';
-import cls from './Dropdown.module.scss';
 
 export interface DropdownItem {
     disabled?: boolean;
@@ -21,8 +21,8 @@ interface DropdownProps {
     trigger: ReactNode;
 }
 
-export const Dropdown = memo((props: DropdownProps) => {
-    const { className, items, trigger, direction = 'bottom right' } = props;
+export function Dropdown(props: DropdownProps) {
+    const { className, trigger, items, direction = 'bottom right' } = props;
 
     const menuClasses = [mapDirectionClass[direction], popupCls.menu];
 
@@ -55,8 +55,8 @@ export const Dropdown = memo((props: DropdownProps) => {
                             <Menu.Item
                                 as={AppLink}
                                 to={item.href}
-                                key={`dropdown-key${index}`}
                                 disabled={item.disabled}
+                                key={`dropdown-key-${index}`}
                             >
                                 {content}
                             </Menu.Item>
@@ -65,7 +65,7 @@ export const Dropdown = memo((props: DropdownProps) => {
 
                     return (
                         <Menu.Item
-                            key={`dropdown-key${index}`}
+                            key={`dropdown-key-${index}`}
                             as={Fragment}
                             disabled={item.disabled}
                         >
@@ -76,4 +76,4 @@ export const Dropdown = memo((props: DropdownProps) => {
             </Menu.Items>
         </Menu>
     );
-});
+}

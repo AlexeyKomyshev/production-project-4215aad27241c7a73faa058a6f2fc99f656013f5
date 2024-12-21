@@ -12,15 +12,11 @@ export const ViewSelectorContainer = memo(
         const { view, onChangeView } = useArticleFilters();
 
         return (
-            <div>
-                <ArticleViewSelector
-                    className={className}
-                    view={view}
-                    onViewClick={onChangeView}
-                />
-            </div>
+            <ArticleViewSelector
+                className={className}
+                view={view}
+                onViewClick={onChangeView}
+            />
         );
     },
 );
-
-// 136/20

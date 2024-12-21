@@ -1,10 +1,17 @@
 .Button {
     cursor: pointer;
     color: var(--text-redesigned);
-    padding: 6px 15px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
 
     &:hover {
         color: var(--accent-redesigned);
+
+        .addonLeft svg,
+        .addonRight svg {
+            color: var(--accent-redesigned);
+        }
     }
 }
 
@@ -15,12 +22,24 @@
     outline: none;
 }
 
+.withAddon {
+    padding: 0 16px;
+}
+
+.addonLeft,
+.addonRight {
+    display: flex;
+}
+
+.addonLeft svg,
+.addonRight svg {
+    color: var(--hint-redesigned);
+}
 .filled {
     background: var(--light-bg-redesigned);
     border: none;
     border-radius: 34px;
     outline: none;
-    padding: 8px 16px;
 }
 
 .square {

@@ -47,6 +47,7 @@ const ArticlesPage = (props: ArticlesPageProps) => {
             on={
                 <StickyContentLayout
                     left={<ViewSelectorContainer />}
+                    right={<FilterContainer />}
                     content={
                         <Page
                             data-testid="ArticlesPage"
@@ -61,7 +62,6 @@ const ArticlesPage = (props: ArticlesPageProps) => {
                             <ArticlePageGreeting />
                         </Page>
                     }
-                    right={<FilterContainer />}
                 />
             }
             off={
