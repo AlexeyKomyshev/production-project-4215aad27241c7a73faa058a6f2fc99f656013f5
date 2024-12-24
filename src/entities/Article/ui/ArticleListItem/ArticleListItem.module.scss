@@ -1,3 +1,5 @@
+
+
 .BIG {
     .views {
         margin-left: auto;
@@ -99,5 +101,18 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+}
+
+.ArticleListItemRedesigned {
+    &.BIG {
+        width: 100%;
+    }
+
+    &.SMALL {
+        display: flex;
+        align-items: center;
+        height: 340px;
+        width: 240px;
     }
 }
