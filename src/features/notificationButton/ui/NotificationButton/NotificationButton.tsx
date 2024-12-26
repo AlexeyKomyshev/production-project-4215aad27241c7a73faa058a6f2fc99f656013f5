@@ -1,7 +1,7 @@
 import React, { memo, useCallback, useState } from 'react';
 import { BrowserView, MobileView } from 'react-device-detect';
+import { Drawer } from '@/shared/ui/redesigned/Drawer';
 import { Popover as PopoverDeprecated } from '@/shared/ui/deprecated/Popups';
-import { Drawer } from '@/shared/ui/deprecated/Drawer';
 import {
     Button as ButtonDeprecated,
     ButtonTheme,
