@@ -703,7 +703,7 @@
       },
       "avatar": "https://www.zastavki.com/pictures/originals/2014/Animals___Cats_Shaggy_Kuril_Bobtail_kitten_091931_.jpg",
       "jsonSettings": {
-        "theme": "app_dark_theme",
+        "theme": "app_light_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
@@ -823,6 +823,13 @@
       "rate": 3,
       "feedback": "",
       "id": "pexAJCL"
+    },
+    {
+      "userId": "1",
+      "articleId": "4",
+      "rate": 4,
+      "feedback": "Попа",
+      "id": "XOxT-B_"
     }
   ],
   "profile-ratings": [
