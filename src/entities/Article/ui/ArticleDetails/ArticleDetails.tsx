@@ -26,11 +26,11 @@ import { fetchArticleById } from '../../model/services/fetchArticleById/fetchArt
 import { articleDetailsReducer } from '../../model/slice/articleDetailsSlice';
 import cls from './ArticleDetails.module.scss';
 import { renderArticleBLock } from './renderBlock';
-import { ToggleFeatures } from '@/shared/lib/features';
+import { toggleFeatures, ToggleFeatures } from '@/shared/lib/features';
 import { Text } from '@/shared/ui/redesigned/Text';
 import { AppImage } from '@/shared/ui/redesigned/AppImage';
 import { Skeleton as SkeletonDeprecated } from '@/shared/ui/deprecated/Skeleton';
-import { Skeleton } from '@/shared/ui/redesigned/Skeleton';
+import { Skeleton as SkeletonRedesigned } from '@/shared/ui/redesigned/Skeleton';
 
 interface ArticleDetailsProps {
     className?: string;
@@ -39,6 +39,29 @@ interface ArticleDetailsProps {
 
 const reducers: ReducersList = {
     articleDetails: articleDetailsReducer,
+};
+
+const ArticleDetailsSkeleton = () => {
+    const Skeleton = toggleFeatures({
+        name: 'isAppRedesigned',
+        on: () => SkeletonRedesigned,
+        off: () => SkeletonDeprecated,
+    });
+
+    return (
+        <VStack gap="16" max className={cls.content}>
+            <Skeleton
+                className={cls.avatar}
+                width={200}
+                height={200}
+                border="50%"
+            />
+            <Skeleton className={cls.title} width={300} height={32} />
+            <Skeleton className={cls.skeleton} width={300} height={24} />
+            <Skeleton className={cls.skeleton} width="100%" height={200} />
+            <Skeleton className={cls.skeleton} width="100%" height={200} />
+        </VStack>
+    );
 };
 
 const Deprecated = () => {
@@ -81,7 +104,13 @@ const Redesigned = () => {
             <Text title={article?.title} size="l" bold />
             <Text title={article?.subtitle} />
             <AppImage
-                fallback={<Skeleton width="100%" height={420} border="16px" />}
+                fallback={
+                    <SkeletonRedesigned
+                        width="100%"
+                        height={420}
+                        border="16px"
+                    />
+                }
                 src={article?.img}
                 className={cls.img}
             />
@@ -106,41 +135,23 @@ export const ArticleDetails = memo((props: ArticleDetailsProps) => {
     let content;
 
     if (isLoading) {
-        content = (
-            <>
-                <SkeletonDeprecated
-                    className={cls.avatar}
-                    width={200}
-                    height={200}
-                    border="50%"
-                />
-                <SkeletonDeprecated
-                    className={cls.title}
-                    width={300}
-                    height={32}
-                />
-                <SkeletonDeprecated
-                    className={cls.skeleton}
-                    width={300}
-                    height={24}
-                />
-                <SkeletonDeprecated
-                    className={cls.skeleton}
-                    width="100%"
-                    height={200}
-                />
-                <SkeletonDeprecated
-                    className={cls.skeleton}
-                    width="100%"
-                    height={200}
-                />
-            </>
-        );
+        content = <ArticleDetailsSkeleton />;
     } else if (error) {
         content = (
-            <TextDeprecated
-                align={TextAlign.CENTER}
-                title={t('Произошла ошибка при загрузке статьи')}
+            <ToggleFeatures
+                feature="isAppRedesigned"
+                on={
+                    <Text
+                        align={TextAlign.CENTER}
+                        title={t('Произошла ошибка при загрузке статьи')}
+                    />
+                }
+                off={
+                    <TextDeprecated
+                        align={TextAlign.CENTER}
+                        title={t('Произошла ошибка при загрузке статьи')}
+                    />
+                }
             />
         );
     } else {
