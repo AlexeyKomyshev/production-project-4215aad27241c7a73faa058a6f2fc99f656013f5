@@ -102,15 +102,17 @@
     }
 }
 
+
+
 .ArticleListItemRedesigned {
     &.BIG {
         width: 100%;
     }
 
     &.SMALL {
-        display: flex;
-        align-items: center;
-        height: 340px;
-        width: 240px;
+        .card {
+            height: 350px;
+            width: 240px;
+        }
     }
 }
