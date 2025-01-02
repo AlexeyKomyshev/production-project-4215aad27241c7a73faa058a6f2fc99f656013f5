@@ -15,11 +15,15 @@
 }
 
 .normal {
- border-radius: 12px;
+    border-radius: 12px;
 }
 
 .round {
     border-radius: 40px;
+}
+
+.partial {
+    border-radius: 20px;
 }
 
 .light {
@@ -33,12 +37,15 @@
 .gap_0 {
     padding: 0;
 }
+
 .gap_8 {
     padding: 8px;
 }
+
 .gap_16 {
     padding: 16px;
 }
+
 .gap_24 {
     padding: 24px;
 }
